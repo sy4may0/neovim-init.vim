@@ -79,6 +79,8 @@ endif
 colorscheme molokai
 syntax on
 
+set formatoptions=tcroq 
+
 set fenc=utf-8
 set nobackup
 set noswapfile
@@ -98,7 +100,6 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set autoindent
-set smartindent
 
 let mapleader = "\<Space>"
 
@@ -115,11 +116,11 @@ set smartcase
 nnoremap <silent> CC :<C-u>set nohlsearch!<CR>
 
 " Denite.vim configure
-nnoremap <silent> <Leader>f :<C-u>Denite file -mode=normal -highlight-mode-insert=Search<CR>
+nnoremap <silent> <Leader>f :<C-u>Denite file -highlight-mode-insert=Search<CR>
 nnoremap <silent> <Leader>a :<C-u>Denite file_rec -mode=normal -highlight-mode-insert=Search<CR>
 nnoremap <silent> <Leader>g :<C-u>Denite file_rec -mode=normal grep<CR>
 nnoremap <silent> <Leader>c :<C-u>Denite file_mru -mode=normal -highlight-mode-insert=Search<CR>
-nnoremap <silent> <Leader>b :<C-u>Denite Buffer -mode=normal -highlight-mode-insert=Search<CR>
+nnoremap <silent> <Leader>b :<C-u>Denite buffer -highlight-mode-insert=Search<CR>
 nnoremap <silent> <Leader>o :<C-u>Denite outline -mode=normal -highlight-mode-insert=Search<CR>
 nnoremap <silent> <Leader>y :<C-u>Denite neoyank -mode=normal -highlight-mode-insert=Search<CR>
 
@@ -159,3 +160,8 @@ nmap gx <Plug>(openbrowser-smart-search)
 
 " NERDTree
 nnoremap <silent> NT :<C-u>NERDTree<CR>
+
+" jedi-vim
+autocmd FileType python setlocal completeopt-=preview
+
+
