@@ -1,0 +1,2 @@
+100
+['Shougo/dein.vim', 'Shougo/denite.nvim', 'Shougo/deoplete.nvim', 'Shougo/neomru.vim', 'Shougo/neoyank.vim', 'Shougo/unite-outline', 'Yggdroot/indentLine', 'basyura/TweetVim', 'basyura/twibill.vim', 'fatih/vim-go', 'kannokanno/previm', 'mattn/webapi-vim', 'simeji/winresizer', 'sy4may0/sosowa.vim', 'tpope/vim-markdown', 'tyru/open-browser.vim', 'zchee/deoplete-jedi']

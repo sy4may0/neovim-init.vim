@@ -20,9 +20,6 @@ on_ft = 'go'
 repo = 'simeji/winresizer'
 
 [[plugins]]
-repo = 'tyru/open-browser.vim'
-
-[[plugins]]
 repo = 'basyura/twibill.vim'
 
 [[plugins]]
@@ -30,4 +27,15 @@ repo = 'mattn/webapi-vim'
 
 [[plugins]]
 repo = 'basyura/TweetVim'
+
+[[plugins]]
+repo = 'tpope/vim-markdown'
+on_ft = 'md'
+
+[[plugins]]
+repo = 'sy4may0/sosowa.vim'
+
+[[plugins]]
+repo = 'kannokanno/previm'
+on_ft = 'md'
 

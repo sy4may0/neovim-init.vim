@@ -156,7 +156,7 @@ nnoremap <silent> STL :<C-u>TweetVimHomeTimeline<CR>
 
 " open-browser.vim
 let g:netrw_nogx = 1
-nmap gx <Plug>(openbrowser-smart-search)
+nnoremap gx <Plug>(openbrowser-smart-search)
 
 " NERDTree
 nnoremap <silent> NT :<C-u>NERDTree<CR>
@@ -164,4 +164,8 @@ nnoremap <silent> NT :<C-u>NERDTree<CR>
 " jedi-vim
 autocmd FileType python setlocal completeopt-=preview
 
+
+" previm
+nnoremap <silent> <C-p> :PrevimOpen<CR>
+let g:previm_open_cmd = 'firefox'
 
